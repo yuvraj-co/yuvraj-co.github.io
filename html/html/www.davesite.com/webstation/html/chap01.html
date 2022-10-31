@@ -1,0 +1,101 @@
+<html>
+<!-- Mirrored from www.davesite.com/webstation/html/chap01.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:44 GMT -->
+<head><title>HTML: MiniChapter 1: The Basics</title>
+<meta name="description" content="Learn how to structure a simple HTML page, and how to make page text bold, underlined, and italicized.">
+<meta name="keywords" content="page structure, page structuring, making text bold, italicized, underlined, editing html, building web sites interactive html tutorial, web page, html, tutorial, creating web sites">
+</head>
+
+
+<body bgcolor=#FFFFFF text=#000000 background="lilback.jpg">
+
+<p>
+<b><font face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.davesite.com/">davesite.com</a> / <a href="http://www.davesite.com/webstation/">webstation</a> / <a href="index.html">html</a></font></b>
+
+<CENTER><TABLE><TR><TD>
+
+
+
+<center>
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+     <script language="JavaScript"> 
+     <!-- /* © 1997-1999 BURST! Media, LLC. All Rights Reserved.*/ 
+     var TheAdcode = 'ad1091c'; 
+     var bN = navigator.appName; 
+     var bV = parseInt(navigator.appVersion); 
+     var base='http://www.burstnet.com/'; 
+     var Tv=''; 
+     var agt=navigator.userAgent.toLowerCase(); 
+     if (bV>=4) 
+       {ts=window.location.pathname+window.location.search; 
+        i=0; Tv=0; while (i< ts.length) 
+           { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+       else   {Tv=escape(window.location.pathname); 
+        if( Tv.charAt(0)!='http://www.davesite.com/' ) Tv="/"+Tv; 
+               else if (Tv.charAt(1)=="http://www.davesite.com/")
+     Tv=""; 
+       if( Tv.charAt(Tv.length-1) == "http://www.davesite.com/") 
+         Tv = Tv + "_";} 
+     if (bN=='Netscape'){ 
+          if ((bV>=4)&&(agt.indexOf("mac")==-1))
+     {  document.write('<s'+'cript src="'+ 
+           base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+           +Tv+'">'); 
+          document.write('</'+'script>');    
+     } 
+          else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+             TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+             document.write('<img src="' + base + 'cgi-bin/ads/' + 
+             TheAdcode + '.cgi' + Tv + '" ismap width=468 height=60' + 
+             ' border=0 alt="Click Here"></a>');} 
+      } 
+     if (bN=='Microsoft Internet Explorer') 
+      document.write('<ifr'+'ame id=BURST src="'+base+'cgi-bin/ads/'
+     + 
+       TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width=468 height=60' + 
+       'marginwidth=0 marginheight=0 hspace=0 vspace=0 ' + 
+       'frameborder=0 scrolling=no></ifr'+'ame>'); 
+     // --> 
+     </script> 
+     <noscript><a href="http://www.burstnet.com/ads/ad1091c-map.cgi" target=_top> 
+     <img src="http://www.burstnet.com/cgi-bin/ads/ad1091c.cgi" 
+      width=468 height=60 border=0 alt="Click Here"></a> 
+     </noscript> 
+     <!-- END BURST CODE --> 
+</center>
+
+
+</TD></TR></TABLE></CENTER><P><hr width=470 noshade><table width=100% border=0><tr><td width=30 valign=bottom>...</td><td><!-- start content table --><table width=100% border=0 cellpadding=5><tr><td><center><a href="index.html"><img src="../../graphx/html_now.gif" width=200 height=50 alt="HTML Tutorial" border=0></a><br><font size=+2></a><b><tt>MiniChapter 1: The Basics</tt></b></font></center><br>        <tr><td bgcolor=#DFE2ED>	<tt><b><font size=+2>Tags...</font></b></tt>        <tr><td bgcolor=#EEEEEE>        <p>The Page you are viewing right now is an HTML document.  HTML documents look a lot like word-processing documents...<br><br>	You can have <b>bold</b> and <i>italicized</i>, <font size=+2>Larger</font> and <font size=-2>Smaller</font>, or it could look <tt>type-written</tt>.<br><br>Of course, the HTML code for this looks like a bunch of gibberish...<br><br><tt>You can have &lt;b&gt;bold&lt;/b&gt; and &lt;i&gt;italicized&lt;/i&gt;, &lt;font size=+2&gt;Larger&lt;/font&gt; and &lt;font size=-2&gt;Smaller&lt;/font&gt;, or it could look &lt;tt&gt;type-written&lt;/tt&gt;.</tt><br><br>So what are all these &quot;&lt;&quot; and &quot;&gt;&quot; things doing here?  When you place a certain thing within these you are making something known as a tag.  For example the <tt>&lt;b&gt;</tt> tag is saying to start bold text, and the <tt>&lt;/b&gt;</tt> tag is saying to stop bold text.  The tag with the slash (/) is known as the closing tag.  Many opening tags require a following closing tag, but not all do.  Tags make up the entire structure of an HTML document.<br><br><tt><pre>&lt;b&gt;This Text is Bold&lt;/b&gt;<br>^^^--Opening Tag    ^^^^--Closing Tag</pre></tt><br><i>Here are two pieces of HTML code, the second of the two has an error in it, what is it?</i><br><br>#1 - Bob jumped <b>OVER</b> the fence.<br>#1 - <tt>Bob jumped &lt;b&gt;OVER&lt;/b&gt; the fence.</tt><br>#2 - Bob jumped <b>UNDER the fence.</b><br>#2 - <tt>Bob jumped &lt;b&gt;UNDER&lt;b&gt; the fence.</tt><br><br><i>You should have noticed that the second code is missing a slash (/) in the tag after the word UNDER, which causes the web browser to interpret the code as leaving the bold face on!  This is a common error, so be careful of it!</i><br><br><b>Note: Tags in HTML are NOT case sensitive.  For example... <tt>&lt;title&gt;</tt> and <tt>&lt;TitLE&gt;</tt> both mean the same thing and are interpreted as being the same.</b>        <tr><td bgcolor=#FFFFFF><p>        <tr><td bgcolor=#DFE2ED>	<tt><b><font size=+2>Document Structure...</font></b></tt>	<tr><td bgcolor=#EEEEEE>	<p>HTML files are just normal text files... they usually have the extension of .htm, .html, or .shtml.  HTML documents have two (2) parts, the <b>head</b> and the <b>body</b>.  The body is the larger part of the document, as the body of a letter you would write to a friend would be.  The head of the document contains the document's title and similar information, and the body contains most everything else.<br><br><i>Example of basic HTML document Structure...</i><br><br><tt>&lt;html&gt;<br>&lt;head&gt;&lt;title&gt;Title goes here&lt;/title&gt;&lt;/head&gt;<br>&lt;body&gt;Body goes here&lt;/body&gt;<br>&lt;/html&gt;<br><br></tt>You may find it easier to read if you add extra blank lines such as follows...<br><br><tt>&lt;html&gt;<br><br>&lt;head&gt;<br>&lt;title&gt;Title goes here&lt;/title&gt;<br>&lt;/head&gt;<br><br>&lt;body&gt;<br>Body goes here<br>&lt;/body&gt;<br><br>&lt;/html&gt;<br><br></tt><b>Note: Extra spaces and line breaks (blank lines) will be ignored when the HTML is interpreted... so add them if you wish to do so.</b><br><br>Whatever falls between the TITLE tags will be the title of the document, when the page is viewed it is usually found in the title bar at the top of the screen. (On Windows Machines, this is to the left of the maximize/minimize buttons at the very top of the window.) [Note: You may NOT use other tags within the TITLE tags (Example: You cannot have the code read: <tt>&lt;title&gt;&lt;b&gt;title goes here&lt;/b&gt;&lt;/title&gt;</tt>.]<br><br><i>Example of how titles are viewed...</i><br><br>In Netscape Navigator...<br><b>Netscape - [Title goes here] OR Title goes here - Netscape [depending on version]</b><br><br>In Microsoft Internet Explorer...<br><b>Title goes here - Microsoft Internet Explorer</b><br><br>Whatever you place between the BODY tags will fall into the major area of the document window, and therefore it is the largest part of your HTML document.<br><br>        <tr><td bgcolor=#FFFFFF><p>        <tr><td bgcolor=#DFE2ED>	<tt><b><font size=+2>Try it Yourself!</font></b></tt>	<tr><td bgcolor=#EEEEEE><p>In the Box below, type the following HTML code, then click &quot;Check it Out!&quot;  The HTML document you made will be displayed in your browser.  You may wish to change the words within the tags just to try it out.<br><br>Try typing this:<br><br><tt>&lt;html&gt;<br>&lt;head&gt;&lt;title&gt;Title goes here&lt;/title&gt;&lt;/head&gt;<br>&lt;body&gt;Body goes here&lt;/body&gt;<br>&lt;/html&gt;</tt><br><br><b>Note: Feel free to use COPY and PASTE if you feel comfortable with the code and don't want to type it all yourself in any chapter.</b><br><br><FORM METHOD="POST" ACTION="http://www.davesite.com/cgi-bin/yourwork.cgi"><TEXTAREA NAME="data" COLS=50 ROWS=10></TEXTAREA><INPUT TYPE="submit" name="submit" value="Check it out!"></FORM>
+
+<tr><td bgcolor=#FFFFFF>
+
+<center>
+<!-- VC active -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ValueParameters
+ValueHost = "hs0012243";
+ValueLoaded = false;
+ValueID = "valueid";
+ValueVersion = "1.1";
+ValueWidth = 468;
+ValueHeight = 60;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="http://oz.valueclick.com/jsmaster"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (ValueLoaded) ValueShowAd();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://kansas.valueclick.com/redirect?host=hs0012243&size=468x60&b=html01&v=0" TARGET="_top"><IMG BORDER="0" WIDTH="468" HEIGHT="60" ALT="Click here to visit our sponsor"
+SRC="http://kansas.valueclick.com/cycle?host=hs0012243&size=468x60&b=html01&noscript=1"></A>
+</NOSCRIPT>
+<!-- vc active -->    
+</center>
+
+<tr><td bgcolor=#DFE2ED><center><font size=+1><b><tt>[<a href="chapX1.html">Go to MiniChapter 0!</a> | <a href="index-2.html">Index</a> | <a href="chap02.html">Go to MiniChapter 2!</a>]</tt></b></font></center><hr><center><i>Copyright &copy; 1996-2001 <a href="mailto:webmaster@davesite.com">Dave Kristula</a>. All rights reserved.<br>URL: </i>http://www.davesite.com/webstation/html/chap01.shtml</center></center></td></table></td></table>
+
+</body>
+<!-- Mirrored from www.davesite.com/webstation/html/chap01.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:45 GMT -->
+</html>

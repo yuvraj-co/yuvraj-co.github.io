@@ -1,0 +1,520 @@
+<html>
+
+<!-- Mirrored from www.davesite.com/webstation/html/index.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:55:12 GMT -->
+<head><title>HTML: An Interactive Tutorial for Beginners [ Dave's HTML Guide ]</title><meta name="description" content="HTML: An Interactive Tutorial for Beginners - Learn HTML the easy way with this guide... interactively by example! - you'll learn everything from writing your first code, to uploading your first page, to adding counters, sounds, tables, frames, and more!"><meta name="keywords" content="HTML, WWW, World Wide Web Programming, CGI, HyperText Markup Language, writing web sites, writing home pages">
+<Script Language="JavaScript">
+<!-- This script and many more are available free online at -->
+<!-- The JavaScript Source!! http://javascript.internet.com -->
+
+<!-- Begin
+var expDays = 1; // number of days the cookie should last
+
+var page = "http://www.philtanny.com/tk.cgi?davesite";
+var windowprops = "width=360,height=450,location=0,toolbar=0,menubar=0,scrollbars=1,resizable=1";
+
+function GetCookie (name) {  
+var arg = name + "=";  
+var alen = arg.length;  
+var clen = document.cookie.length;  
+var i = 0;  
+while (i < clen) {    
+var j = i + alen;    
+if (document.cookie.substring(i, j) == arg)      
+return getCookieVal (j);    
+i = document.cookie.indexOf(" ", i) + 1;    
+if (i == 0) break;   
+}  
+return null;
+}
+function SetCookie (name, value) {  
+var argv = SetCookie.arguments;  
+var argc = SetCookie.arguments.length;  
+var expires = (argc > 2) ? argv[2] : null;  
+var path = (argc > 3) ? argv[3] : null;  
+var domain = (argc > 4) ? argv[4] : null;  
+var secure = (argc > 5) ? argv[5] : false;  
+document.cookie = name + "=" + escape (value) + 
+((expires == null) ? "" : ("; expires=" + expires.toGMTString())) + 
+((path == null) ? "" : ("; path=" + path)) +  
+((domain == null) ? "" : ("; domain=" + domain)) +    
+((secure == true) ? "; secure" : "");
+}
+function DeleteCookie (name) {  
+var exp = new Date();  
+exp.setTime (exp.getTime() - 1);  
+var cval = GetCookie (name);  
+document.cookie = name + "=" + cval + "; expires=" + exp.toGMTString();
+}
+var exp = new Date(); 
+exp.setTime(exp.getTime() + (expDays*24*60*60*1000));
+function amt(){
+var count = GetCookie('count')
+if(count == null) {
+SetCookie('count','1')
+return 1
+}
+else {
+var newcount = parseInt(count) + 1;
+DeleteCookie('count')
+SetCookie('count',newcount,exp)
+return count
+   }
+}
+function getCookieVal(offset) {
+var endstr = document.cookie.indexOf (";", offset);
+if (endstr == -1)
+endstr = document.cookie.length;
+return unescape(document.cookie.substring(offset, endstr));
+}
+
+function checkCount() {
+var count = GetCookie('count');
+if (count == null) {
+count=1;
+SetCookie('count', count, exp);
+
+window.open(page, "", windowprops);
+self.focus();
+
+}
+else {
+count++;
+SetCookie('count', count, exp);
+   }
+}
+//  End -->
+</script>
+<SCRIPT LANGUAGE="JavaScript" SRC="../../../a1028.g.akamai.net/6/1028/968/444516c765e1c0/lunafetch.about.com/cgi/luna/lunaC989c.js?vpn=200039&as=1&sp=1&sptw=1"></SCRIPT>
+<LINK REL="SHORTCUT ICON" HREF="favicon.ico">
+</head>
+<body bgcolor=#FFFFFF text=#000000 background="lilback.jpg" OnunLoad="checkCount()">
+
+<!-- start content table -->
+
+<!-- Place sponsor Banner Here -->
+<p>
+<b><font face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.davesite.com/">davesite.com</a> / <a href="http://www.davesite.com/webstation/">webstation</a> / html</font></b>
+
+<center><table border=0 cellpadding=10>		
+
+<tr><td bgcolor=#DFE2ED>
+
+<center><div align="center">
+
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+    <script language="JavaScript"> 
+    <!-- /* © 1997-2001 BURST! Media, LLC. All Rights Reserved.*/ 
+    var TheAdcode = 'ad1091c'; 
+    var bN = navigator.appName; 
+    var bV = parseInt(navigator.appVersion); 
+    var base='http://www.burstnet.com/'; 
+    var Tv=''; 
+    var agt=navigator.userAgent.toLowerCase(); 
+    if (bV>=4) 
+      {ts=window.location.pathname+window.location.search; 
+       i=0; Tv=0; while (i< ts.length) 
+          { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+      else   {Tv=escape(window.location.pathname); 
+       if( Tv.charAt(0)!='http://www.davesite.com/' ) Tv="/"+Tv; 
+              else if (Tv.charAt(1)=="http://www.davesite.com/")
+    Tv=""; 
+      if( Tv.charAt(Tv.length-1) == "http://www.davesite.com/") 
+        Tv = Tv + "_";} 
+    if (bN=='Netscape'){ 
+         if ((bV>=4)&&(agt.indexOf("mac")==-1))
+    {  document.write('<s'+'cript src="'+ 
+          base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+          +Tv+'">'); 
+         document.write('</'+'script>');    
+    } 
+         else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+            TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+            document.write('<img src="' + base + 'cgi-bin/ads/' + 
+            TheAdcode + '.cgi' + Tv + '" ismap width="468" height="60"' + 
+           ' border="0" alt="Click Here"></a>');} 
+     } 
+    if (bN=='Microsoft Internet Explorer') 
+     document.write('<ifr'+'ame id="BURST" src="'+base+'cgi-bin/ads/'
+    + 
+      TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width="468" height="60"' + 
+      'marginwidth="0" marginheight="0" hspace="0" vspace="0" ' + 
+      'frameborder="0" scrolling="no"></ifr'+'ame>'); 
+    // --> 
+    </script> 
+    <noscript><a href="http://www.burstnet.com/ads/ad1091c-map.cgi/ns" target="_top"> 
+    <img src="http://www.burstnet.com/cgi-bin/ads/ad1091c.cgi/ns" 
+    width="468" height="60" border="0" alt="Click Here"></a> 
+    </noscript> 
+    <!-- END BURST CODE --></div></center>
+
+</div></center>
+
+</td></tr></table></center>
+
+<br clear=all>
+<table border=0 width=100%>
+<tr><td width=30 valign=bottom>...</td>
+<td><!-- opening graphic -->
+<table border=0 width=100% cellpadding="5" cellspacing="2">
+<tr><td>
+<p><center>
+<img src="../../graphx/html_new.gif" width=400 height=100 Alt="HTML: An Interactive Tutorial for Beginners"></center></p>
+
+<center>| A Section of <a href="http://www.davesite.com/">Dave's Site</a> | <a href="http://www.davesite.com/webstation/js/">JavaScript Guide</a> | <a href="http://www.davesite.com/webstation/inet101/">Internet 101</a> |</center>
+
+<!-- last updated -->
+
+<p><font size=-1><center>Last Updated: November 30, 2001 [ Added Linking without Underlines to <a href="faq.html">FAQ</a> ]<br>
+</center></font></p>
+
+<!-- opening info about HTML -->
+<tr><td bgcolor=#DFE2ED>
+<font size=+2><b><tt>What is HTML?</tt></b></font><br>
+<tr><td bgcolor=#EEEEEE>
+<p>HTML stands for the <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage. HTML is the major language of the Internet's World Wide Web.  Web sites and web pages are written in HTML.  With HTML and the world wide web, you have the ability to bring together text, pictures, sounds, and links... all in one place!  HTML files are plain text files, so they can be composed and edited on any type of computer... Windows, Mac, UNIX, whatever.
+
+<tr><td bgcolor=#FFFFFF><p>
+<tr><td bgcolor=#DFE2ED>
+<font size=+2><b><tt>Who is this Tutorial for?</tt></b></font><br>
+<tr><td bgcolor=#EEEEEE>
+<p>This tutorial is for anyone who is serious about learning HTML. Perhaps you want your own web page, or an entire web site.  Perhaps you're setting up a website for your business or organization.  You've come to the right place.  You do not need any prior experience in making web pages to take this course (although I will assume you know how to do some basic things with your computer, like use a word-processor.)
+<tr><td bgcolor=#FFFFFF><p>
+<tr><td bgcolor=#DFE2ED>
+<font size=+2><b><tt>What do you mean by Interactive Tutorial?</tt></b></font><br>
+<tr><td bgcolor=#EEEEEE>
+<p>This tutorial is a "hands-on" tutorial... you get to test your new HTML skills immediately after you learn them, chapter by chapter ... all within your web browser!  There is no need to go fiddle with other applications while you are learning HTML with this tutorial.
+<tr><td bgcolor=#FFFFFF><p>
+<tr><td bgcolor=#DFE2ED>
+<font size=+2><b><tt>A small note before you begin...</tt></b></font>
+<br>
+<tr><td bgcolor=#EEEEEE>
+
+<p>By accessing this tutorial you acknowledge that you have read, agree with and will abide by all rules and regulations set forth in the <a href="rules_regs.html">Rules and Regulations of Use</a>.
+
+<p><p>
+
+<!-- #exec cmd="../../adrot2/rotator ../../adrot2/htmlads" -->
+
+If you are using Netscape you can bookmark this site by pressing CTRL-D or choosing Bookmarks &gt; Add Bookmark from your menu.  If you are using Internet Explorer, you can choose Favorites &gt; Add to Favorites to bookmark this site.
+
+<table border="0" cellpadding="5" cellspacing="5">
+<tr><td valign="middle" align="center">
+
+<a href=http://ads.websponsors.com/?u=9881&o=1891&c=6873>
+<IMG SRC=../../../www.websponsors.com/leads/Fastweb/WebClients_120x60.gif 
+width=120 height=60
+alt="FREE scholarship search." border=0></a>
+
+</td><td valign="middle" align="left">
+
+<ul>
+<li>Please visit one or more sponsor banners while you take the course.  They help keep this site free.</li>
+<li>If you enjoy the course, use our <a href="taf_sample.html">tell-a-friend page</a> to let your friends know about it.</li>
+<li>You can link to our page without permission.  Suggested instructions are on the <a href="linkto.html">linkto page</a>.</li>
+<li>If you really like this site, consider giving a gift of $1 or more through the <a href="http://s1.amazon.com/exec/varzea/pay/TSVVO05XJBVJY">Amazon.com Honor System</a>.</li>
+<li>Also, you can do us a favor by <a href="http://38.148.250.3/cgi-win/client.exe?Burst,welcome,ad1091c,1005">filling out a short survey</a>!</li>
+</ul>
+
+</td></tr>
+</table>
+
+<!-- <p>It's probably a good idea to read perhaps only the <b>Standard Tutorial</b> today, then come back in a day or two and read the <b>Advanced Tutorial</b>, and then once everything has had a chance to settle in, read the <b>Design Tutorial</b>.  ...Or you could just load up on caffeine and read it all today.  Or just read whatever you're interested in. :) -->
+
+<p><b>Please do not send specific HTML questions to me</b> -- I become overwhelmed with e-mail messages and cannot answer every question personally! If you'd like to make a suggestion, or a part of the tutorial confuses you, please feel free to send a comment about that along. Thanks for your understanding!</p>
+
+<tr><td bgcolor=#FFFFFF><p>
+<tr><td bgcolor=#DFE2ED><p>
+
+<p>
+
+<center><div align="center">
+<SCRIPT><!--
+adslot1(); //--></SCRIPT></div></center>
+
+<p>
+
+<tr><td bgcolor=#FFFFFF><p>
+
+<tr><td bgcolor=#EEEEEE><p>
+
+<center><p><font size=+2><b><tt><img src="http://www.qksrv.net/image-462266-2948162" width="1" height="1" border="0">
+<a href="chapX1.html">Okay! Let me Learn HTML!</a></tt></b></font><br>(Click above to begin the tutorial)</center><p>
+
+<tr><td bgcolor=#FFFFFF>
+
+<p><!-- standard tutorial list -->
+<tr><td bgcolor=#DFE2ED>
+
+<p><font size=+1 face="Verdana">Standard Tutorial</font>
+<tr><td bgcolor=#EEEEEE><font face="Verdana" size=-1>
+
+<ul>
+ <li><b><a href="chapX1.html">MiniChapter 0: How to <b>start</b> your Home Page</a></b> [A Must Read! Very Important Stuff!]</li>
+ <li><b><a href="chap01.html">MiniChapter 1: The Basics</a></b> [What a tag is, Document Structure]</li> <li><b><a href="chap02.html">MiniChapter 2: The Common Tags</a></b> [Headings and Horizontal Ruled Lines]</li>
+ <li><b><a href="chap03.html">MiniChapter 3: More Common Tags</a></b> [Paragraphs, Text Formatting, ALIGN, and Line Break]</li>
+ <li><b><a href="chap04.html">MiniChapter 4: Links and Images</a></b></li>
+ <li><b><a href="chap05.html">MiniChapter 5: A Little More Tags</a></b> [Centering, BODY, etc.]</li>
+ <li><b><a href="chap06.html">MiniChapter 6: Clean Code, Comments, and Escape Tags</a></b></li>
+ <li><b><a href="chap07.html">MiniChapter 7: Lists, Lists, Lists</b></a> [Unordered, Ordered, and Definition Lists]</li>
+ <li><b><a href="chap08.html">MiniChapter 8: Extended Fonts and Text Colors</b></a></li>
+ <li><b><a href="chap09.html">MiniChapter 9: Navigation within a Document</b></a><br></li>
+ <li><b><a href="chap10.html">MiniChapter 10: Publishing your Page</b></a> [Uploading, Structuring, and Copyright Concerns]
+    <ul>
+     <li><a href="chap10_2.html">MiniChapter 10.2: Short FTP Tutorial</a></li>
+    </ul>
+  </li>
+</ul>
+
+<a href="tag_ref.html">Dave's Short HTML Tag Reference</a> - Printable!<br>
+</font>
+
+<TR><TD bgcolor=#FFFFFF>
+<P><TR><TD bgcolor=#DFE2ED>
+<P><FONT size=+1 face="Verdana">Advanced Tutorial</FONT>
+
+<TR><TD bgcolor=#EEEEEE><FONT face="Verdana" size=-1>
+
+<UL>
+ <LI><B><A href="chap11.html">MiniChapter 11: More About Graphics</A></B> [transparent gifs, animation, interlaced vs. non-interlaced]</LI>
+ <LI><B><A href="chap12.html">MiniChapter 12: Tables</A></B></LI>
+ <LI><B><A href="chap13.html">MiniChapter 13: Adding Sounds to Your Page</A></B></LI>
+ <LI><B><A href="chap14.html">MiniChapter 14: Using Frames</A></B>
+   <UL>
+    <LI><B><A href="chap14_2.html">MiniChapter 14.2: More About Using Frames</A></B></LI>
+    <LI><B><A href="chap14_3.html">MiniChapter 14.3: Even More About Using Frames</A></B></LI>
+   </UL>
+  </LI>
+ <LI><B><A href="chap15.html">MiniChapter 15: Using Meta Tags</A></B> [Improving Search Engine Results, autorefreshing]</LI> 
+ <LI><B><A href="chap16.html">MiniChapter 16: Adding Counters and Guestbooks</A></B></LI>
+ <LI><B><A href="chap17.html">MiniChapter 17: Adding Forms and the mailto form</A></B></LI>
+</UL>
+
+</FONT>
+
+<TR><TD bgcolor=#FFFFFF><P>
+<TR><TD bgcolor=#DFE2ED>
+<P><FONT size=+1 Face="Verdana">Promotion (Getting More Traffic)</FONT>
+<TR><TD bgcolor=#EEEEEE><FONT face="Verdana" size=-1>
+<UL>
+ <LI><B><A href="chapP1.html">PromoChapter 1: Getting in Search Engines</A></B></LI>
+ <LI><B><A href="chapP2.html">PromoChapter 2: The LinkExchange...</A></B></LI>
+</UL>
+
+</FONT>
+<TR><TD bgcolor=#FFFFFF><P>
+
+<TR><TD bgcolor=#DFE2ED><P>
+
+<FONT size=+1 Face="Verdana">Generating Revenue (Making Money)</FONT>
+<TR><TD bgcolor=#EEEEEE><FONT face="Verdana" size=-1>
+
+<UL>
+ <LI><B><A href="chapG1.html">RevenueChapter 1: Generating Revenue with your Site</A></B>
+ <LI><B><a href="http://www.marketingtips.com/t.cgi/51472/">Guide: Tips, Tricks and Tools for Promoting your Business Online</a></b> - recommended reading.
+</UL>
+</FONT>
+
+</TD></TR>
+
+<tr><td bgcolor=#FFFFFF><p>
+<!-- design tips section -->
+<tr><td bgcolor=#DFE2ED>
+<p><font size=+1 Face="Verdana">Design Tutorial</font>
+
+<tr><td bgcolor=#EEEEEE>
+
+ <p>Making a great web site is much more than just coding
+               HTML. You need to be successful at presenting your ideas
+               in an interesting manner, whatever your topic may be.
+               Ignorance may be bliss for the one who writes the web site,
+               but that’s rarely the case for the one who visits it. If your
+               site looks unprofessional, so will your reputation.
+
+<font face="Verdana" size=-1>
+ <ul>
+  <li><b><a href="http://www.neonlollipops.com/design/chap1.shtml">Chapter 1: Getting Started</a></b>
+  <li><b><a href="http://www.neonlollipops.com/design/chap2.shtml">Chapter 2: General Design Considerations</a></b>
+  <li><b><a href="http://www.neonlollipops.com/design/chap3.shtml">Chapter 3: Layout Consideration</a></b>
+  <li><b><a href="http://www.neonlollipops.com/design/chap4.shtml">Chapter 4: Graphics, Backgrounds, and Colors</a></b>
+  <li><b><a href="http://www.neonlollipops.com/design/chap5.shtml">Chapter 5: Page Division, Legal Considerations, and Moving Your Site</a></b>
+  <li><b><a href="http://www.neonlollipops.com/design/chap6.shtml">Chapter 6: Using Tables for Layout</a></b>
+  <li><b><a href="http://www.neonlollipops.com/design/chap7.shtml">Chapter 7: Major Turnoffs in Web Design</a></b>
+ </ul>
+</font>
+
+<tr><td bgcolor=#FFFFFF><p>
+<!-- hosting section -->
+<tr><td bgcolor=#DFE2ED>
+<p><font size=+1 Face="Verdana">Hosting and Extras
+<!-- <img src="hot.gif" width=70 height=30 alt="HOT!"> --></font>
+
+<tr><td bgcolor=#EEEEEE>
+<font face="Verdana" size=-1>
+ <ul>
+ <li><b><a href="http://www.qksrv.net/click-462266-819293" target="_blank" onmouseover="window.status='http://www.futurequest.net/';return true;" onmouseout="window.status=' ';return true;">FutureQuest</a></b> - the great folks that host davesite.com.  <a href="whyfq.html">Read why I moved my site to FutureQuest</a>.
+<a href="http://www.qksrv.net/click-462266-819293" target="_blank" onmouseover="window.status='http://www.futurequest.net/';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.qksrv.net/image-462266-819293" width="88" height="31" alt="FutureQuest Inc, Internet Solutions Provider" border="0" align="right"></a><br clear="all"></li>
+ <li><b><a href="http://www.neonlollipops.com/design/">Dave's Design Tips</a></b> Dave's follow-up to this tutorial, with tons of tips and explanations of current day web site.</li>
+ <li><b><a href="http://www.davesite.com/webstation/inet101/">Dave's Beginners Guide to the Internet</a></b> - Have a friend who really needs the basics?  Send 'em here.</li>
+ <li><b><a href="http://www.davesite.com/webstation/js/">Dave's JavaScript Guide</a></b> Learn a little bit of JavaScript after you know HTML.</li>
+ </ul>
+</font>
+
+<tr><td bgcolor=#FFFFFF><p>
+<!-- misc references list -->
+<tr><td bgcolor=#DFE2ED><p>
+<font size=+1 face="Verdana"><a href="refsandmisc.html">FAQ, References, Links, and Miscellaneous</a></font>
+
+<tr><td bgcolor=#FFFFFF><p>
+<!-- about.com sprinks links -->
+<tr><td bgcolor=#DFE2ED><p>
+
+<SCRIPT><!--
+sprinkslite();
+// --></SCRIPT>
+
+<tr><td bgcolor=#FFFFFF><p>
+
+<!-- awards and advertising information -->
+<tr><td bgcolor=#DFE2ED>
+<p><b><tt><font size=+2>Links / About Us / Recommended Books</font></tt></b>
+
+<tr><td bgcolor=#EEEEEE>
+
+<p>
+
+<table border=0 cellpadding=5 cellspacing=5><tr>
+<td>
+
+<SCRIPT><!--
+sprinkstower("3", "Verdana, Helvetica, sans-serif", "#FFFFFF", "#CC0000", "Visit Great<BR> Sites About<BR>", "#FFFFFF", "#000000", sprinksboxtitle, "");
+// --></SCRIPT>
+
+</td><td>
+
+<table border="0" cellpadding="5" cellspacing="5">
+<tr><th colspan="3">Recommended Books : Most are 30% off through Amazon Links Below</th></tr>
+
+<tr><td valign="middle" align="center">
+
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0201354934/davesitecom"><IMG SRC="0201354934.01.MZZZZZZZ.jpg" border="0" alt="cover" hspace="3" vspace="3" width="108" height="140"></A>
+<br><font size=-1><A HREF="http://www.amazon.com/exec/obidos/ASIN/0201354934/davesitecom">HTML 4 for the World Wide Web: Visual Quickstart Guide</a></font>
+
+</td><td valign="middle" align="center">
+
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0672320762/davesitecom"><IMG SRC="0672320762.01.MZZZZZZZ.jpg" border="0" alt="cover" hspace="3" vspace="3" width="113" height="140"></A>
+<br><font size=-1><A HREF="http://www.amazon.com/exec/obidos/ASIN/0672320762/davesitecom">Sams Teach Yourself HTML and XHTML in 24 Hours</a></font>
+
+</td><td valign="middle" align="center">
+
+<A HREF="http://www.amazon.com/exec/obidos/ASIN/0761524827/davesitecom"><IMG SRC="0761524827.01.MZZZZZZZ.gif" border="0" alt="cover" hspace="3" vspace="3" width="113" height="140"></A>
+<br><font size=-1><A HREF="http://www.amazon.com/exec/obidos/ASIN/0761524827/davesitecom">Create Your First Web Page In a Weekend</a></font>
+
+</td></tr>
+</table>
+
+
+<p> <b>Interesting in advertising on this site?</b> <a href="http://www.burstmedia.com/release/advertisers/adcontact.asp?siteurl=www.davesite.com">Contact BurstMedia!</a>
+
+<p> <b>Dave Kristula</b> is <a href="http://www.davesite.com/webmaster/">webmaster</a> of <a href="http://www.davesite.com/">davesite.com</a>.<br>He is a graduate of <a href="http://www.muhlsd.berksiu.k12.pa.us/">Muhlenberg Senior High School</a> class of 2000, and attends <a href="http://www.albright.edu/">Albright College</a> in Reading, PA.  He is studying Computer Science and Digital Media.
+<p> <b>Andrew Widdowson</b> (Dave's Best Bud) provided CGI programming, moral support, and some proofreading within this tutorial.<b>You can visit his site at <a href="http://www.apw.net/">APW.NET</a>.</b>
+
+<center><div align="center">
+
+<table border="0"><tr><td valign="top">
+
+<table border="0" cellpadding="5">
+<tr><td width="33%" valign="middle">
+
+<img src="http://s1.amazon.com/exec/varzea/tipbox/A2TUYRPS9TEGCJ/TSVVO05XJBVJY" usemap="#TSVVO05XJBVJY" border="0" alt="Amazon Honor System">
+<map name="TSVVO05XJBVJY">
+<area coords="13,64,108,117" href="http://s1.amazon.com/exec/varzea/pay/TSVVO05XJBVJY" alt="Click Here to Pay" target=_top>
+<area coords="13,133,108,145" href="http://s1.amazon.com/exec/varzea/subst/fx/help/how-we-know.html" alt="Learn More" target=_top>
+</map>
+
+</td><td width="34%" valign="middle" align="center">
+
+<p><a href="http://www.qksrv.net/click-462266-819293" target="_blank" onmouseover="window.status='http://www.futurequest.net/';return true;" onmouseout="window.status=' ';return true;">
+<img src="http://www.qksrv.net/image-462266-819293" width="88" height="31" alt="FutureQuest Inc, Internet Solutions Provider" border="0"></a>
+
+<p><!-- VC active -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ValueParameters
+ValueHost = "hs0012243";
+ValueLoaded = false;
+ValueID = "valueid";
+ValueVersion = "1.1";
+ValueWidth = 120;
+ValueHeight = 60;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="http://oz.valueclick.com/jsmaster"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (ValueLoaded) ValueShowAd();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://kansas.valueclick.com/redirect?host=hs0012243&size=120x60&b=hprediag&v=0" TARGET="_top"><IMG BORDER="0" WIDTH="120" HEIGHT="60" ALT="Click here to visit our sponsor"
+SRC="http://kansas.valueclick.com/cycle?host=hs0012243&size=120x60&b=hprediag&noscript=1"></A>
+</NOSCRIPT>
+<!-- vc active -->
+
+<p><!-- BEGIN WEBSIDESTORY CODE - ALTERING THIS CODE WILL CAUSE TERMINATION OF ACCOUNT -->
+<A HREF="http://w12.hitbox.com/a.cgi?G24444397"><IMG SRC="http://w12.hitbox.com/wc3/G24444397.cgi"	BORDER=0 HEIGHT="62" WIDTH="88"	ALT="CLICK HERE TO VISIT THE WORLD'S TOP 1000 LIST!"></A>
+<!-- END WEBSIDESTORY CODE  -->
+
+
+</td><td width="33%" valign="middle" align="center">
+<a href=http://ads.websponsors.com/?u=9881&o=2628&c=12556>
+<IMG SRC=../../../www.websponsors.com/leads/xbox/125x125.gif 
+width=125 height=125
+alt="Click here" border=0></a>
+</td></tr>
+</table>
+
+</td></tr></table>
+
+</div></center>
+
+
+
+<!-- </td><td valign="top">
+
+<script src="http://rcm.amazon.com/e/cm?t=davesitecom&l=rc1&p=5&o=1" type="text/JavaScript"></script>
+<noscript>
+
+<map name="ten_item_list">
+<area shape="RECT" coords="0,742,231,769"
+href="http://rcm.amazon.com/e/cm/privacy-policy.html?o=1" alt="Amazon.com Privacy Information">
+<area shape="RECT" coords="1,741,164,0"
+href="http://www.amazon.com/exec/obidos/redirect-home/davesitecom"
+alt="Shop Here Now!">
+</map>
+<img src="http://rcm-images.amazon.com/images/G/01/associates/amzn_recommends/ten_item_list.gif" width="164" height="769" border="0"
+usemap="#ten_item_list">
+
+</noscript>
+
+</td></tr> -->
+
+</table>
+
+<tr><td bgcolor=#FFFFFF><p>
+<!-- copyright notice -->
+<tr><td bgcolor=#DFE2ED>		
+
+<center><i>Copyright &copy; 1996-2001 <a href="mailto:webmaster@davesite.com">Dave Kristula</a>.  All Rights Reserved.</i><br><a href="http://www.davesite.com/privacy.shtml">Our Privacy Policy</a></center>
+
+</td></tr></table>
+
+</td></tr></table></center>
+
+<SCRIPT><!-- 
+adclose();
+// --></SCRIPT>
+
+</body>
+<!-- Mirrored from www.davesite.com/webstation/html/index.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:55:15 GMT -->
+</html>

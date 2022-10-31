@@ -1,0 +1,188 @@
+<html>
+
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap05.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:48 GMT -->
+<head>
+<title>HTML: MiniChapter 5: A little more tags</title>
+<meta name="description" content="Learn how to center things on a web page, how to add a background file, and how to change the page's default colors.">
+<meta name="keywords" content="adding backgrounds, changing colors on web page, centering on a web page, editing html, building web sites interactive html tutorial, web page, html, tutorial, creating web sites">
+</head>
+
+<body bgcolor=#FFFFFF text=#000000 background="lilback.jpg">
+
+<p>
+<b><font face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.davesite.com/">davesite.com</a> / <a href="http://www.davesite.com/webstation/">webstation</a> / <a href="index.html">html</a></font></b>
+
+<CENTER><TABLE>
+<TR><TD>
+
+<CENTER>
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+     <script language="JavaScript"> 
+     <!-- /* © 1997-1999 BURST! Media, LLC. All Rights Reserved.*/ 
+     var TheAdcode = 'ad1091c'; 
+     var bN = navigator.appName; 
+     var bV = parseInt(navigator.appVersion); 
+     var base='http://www.burstnet.com/'; 
+     var Tv=''; 
+     var agt=navigator.userAgent.toLowerCase(); 
+     if (bV>=4) 
+       {ts=window.location.pathname+window.location.search; 
+        i=0; Tv=0; while (i< ts.length) 
+           { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+       else   {Tv=escape(window.location.pathname); 
+        if( Tv.charAt(0)!='http://www.davesite.com/' ) Tv="/"+Tv; 
+               else if (Tv.charAt(1)=="http://www.davesite.com/")
+     Tv=""; 
+       if( Tv.charAt(Tv.length-1) == "http://www.davesite.com/") 
+         Tv = Tv + "_";} 
+     if (bN=='Netscape'){ 
+          if ((bV>=4)&&(agt.indexOf("mac")==-1))
+     {  document.write('<s'+'cript src="'+ 
+           base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+           +Tv+'">'); 
+          document.write('</'+'script>');    
+     } 
+          else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+             TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+             document.write('<img src="' + base + 'cgi-bin/ads/' + 
+             TheAdcode + '.cgi' + Tv + '" ismap width=468 height=60' + 
+             ' border=0 alt="Click Here"></a>');} 
+      } 
+     if (bN=='Microsoft Internet Explorer') 
+      document.write('<ifr'+'ame id=BURST src="'+base+'cgi-bin/ads/'
+     + 
+       TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width=468 height=60' + 
+       'marginwidth=0 marginheight=0 hspace=0 vspace=0 ' + 
+       'frameborder=0 scrolling=no></ifr'+'ame>'); 
+     // --> 
+     </script> 
+     <noscript><a href="http://www.burstnet.com/ads/ad1091c-map.cgi" target=_top> 
+     <img src="http://www.burstnet.com/cgi-bin/ads/ad1091c.cgi" 
+      width=468 height=60 border=0 alt="Click Here"></a> 
+     </noscript> 
+     <!-- END BURST CODE --> 
+</CENTER>
+
+</TD></TR>
+</TABLE></CENTER>
+
+<P>
+<hr width=470 noshade>
+
+<table width=100% border=0>
+
+<tr>
+<td width=30 valign=bottom>...</td>
+
+<td>
+
+<!-- start content table -->
+
+<table width=100% border=0 cellpadding=5>
+<tr>
+<td>
+
+<center><a href="index.html"><img src="../../graphx/html_now.gif" width=200 height=50 alt="HTML Tutorial" border=0></a><br><font size=+2><b><tt>MiniChapter 5: A little more tags</tt></b></font></center><br>
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>The CENTER tag and DIV tag...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>The center tag pretty much explains itself!  The opening center tag is <tt>&lt;center&gt;</tt> and the closing center tag is <tt>&lt;/center&gt;</tt>.  Whatever you put between will be centered on the current line!<br><br>
+<i>Example of CENTER tag...</i><br><br>
+<center><h1>Center Works!!!</h1></center>
+<tt>&lt;center&gt;&lt;h1&gt;Center Works!!!&lt;/h1&gt;&lt;/center&gt;</tt><br><br>
+	<p><b>Note:</b> Recently, the W3C (the group that decides on HTML standards) has recommended that when writing HTML, you use <tt>&lt;div align=&quot;center&quot;&gt;centered text&lt;/div&gt;</tt> instead of the center tag.  Although <tt>div</tt> does not work in many older web browsers, it works in virtually all recent versions of popular web browsers.  The neat thing about <tt>div</tt> is that you can align both <tt>left</tt> and <tt>right</tt> in addition to <tt>center</tt>. 
+
+	<tr><td bgcolor=#FFFFFF><p>	
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>The BODY attributes...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>In Chapter 1 you learned the <tt>BODY</tt> tag.  The <tt>BODY</tt> tag has many attributes... here are a the most useful ones...
+<ul>
+ <li><tt>BACKGROUND=&quot;location_of_image&quot;</tt> - Background image for web page.  Example: If you have kitten.jpg in the same directory as your HTML file, use <tt>&lt;body background=&quot;kitten.jpg&quot;&gt;</tt> to load it as your background image.</li>
+ <li><tt>BGCOLOR=&quot;#hexadecimal_here&quot;</tt> - Hexadecimal Color Code for Background Color</li>
+ <li><tt>LINK=&quot;#hexadecimal_here&quot;</tt> - Hexadecimal Color Code for Links (if left blank, most browsers default to blue.)</li>
+ <li><tt>VLINK=&quot;#hexadecimal_here&quot;</tt> - Hexadecimal Color Code for Links the User has Already Visited (if left blank, most browsers default to purple.)</li>
+ <li><tt>TEXT=&quot;#hexadecimal_here&quot;</tt> - Hexadecimal Color Code for Text Color</li>
+ <li><tt><a href="hexchart.html">Click Here to Learn how to use the Hexadecimal Color System</a></tt></li>
+</ul>
+
+<p>
+<center><table border="1" cellspacing="2" cellpadding="2">
+<tr><th>Red</th><th>Green</th><th>Blue</th></tr>
+<tr><td bgcolor="#FF0000">#FF0000</td><td bgcolor="#00FF00">#00FF00</td><td bgcolor="#0000FF">#0000FF</td></tr></table></center>
+
+	<tr><td bgcolor=#FFFFFF><p>
+
+        <tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Try it Yourself!</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>In the Box below, type the following HTML code, then click &quot;Check it Out!&quot;  The HTML document you made will be displayed in your browser.  You may wish to change the words within the tags and the tag attributes just to try it out.<br><br>
+Try typing this:<br><br>
+<tt>&lt;html&gt;<br>
+&lt;head&gt;&lt;title&gt;Title goes here&lt;/title&gt;&lt;/head&gt;<br>
+&lt;body bgcolor=&quot;#FFFFFF&quot; link=&quot;#FF0000&quot; vlink=&quot;#00FF00&quot;&gt;<br>
+&lt;h1 align=right&gt;Body goes here&lt;/h1&gt;<br>
+&lt;hr&gt;<br>
+&lt;center&gt;&lt;h3&gt;Headings are kewl!&lt;/h3&gt;&lt;/center&gt;<br>
+&lt;div align=&quot;right&quot;&gt;div is also a cool tag!&lt;/div&gt;<br>
+&lt;a href=&quot;http://www.davesite.com/&quot;&gt;This link should be red if you haven't visited davesite.com/ and green if you have.&lt;/a&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br><br></tt>
+<FORM METHOD="POST" ACTION="http://www.davesite.com/cgi-bin/yourwork.cgi">
+<TEXTAREA NAME="data" COLS=50 ROWS=10></TEXTAREA>
+<INPUT TYPE="submit" name="submit" value="Check it out!">
+</FORM>
+
+       <tr><td bgcolor=#FFFFFF><p>
+
+<center>
+<!-- VC active -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ValueParameters
+ValueHost = "hs0012243";
+ValueLoaded = false;
+ValueID = "valueid";
+ValueVersion = "1.1";
+ValueWidth = 468;
+ValueHeight = 60;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="http://oz.valueclick.com/jsmaster"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (ValueLoaded) ValueShowAd();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://kansas.valueclick.com/redirect?host=hs0012243&size=468x60&b=html01&v=0" TARGET="_top"><IMG BORDER="0" WIDTH="468" HEIGHT="60" ALT="Click here to visit our sponsor"
+SRC="http://kansas.valueclick.com/cycle?host=hs0012243&size=468x60&b=html01&noscript=1"></A>
+</NOSCRIPT>
+<!-- vc active -->    
+</center>
+
+
+       <tr><td bgcolor=#DFE2ED>
+
+<center><font size=+1><b><tt>[<a href="chap04.html">Go to MiniChapter 4!</a> | <a href="index-2.html">Index</a> | <a href="chap06.html">Go to MiniChapter 6!</a>]</tt></b></font></center>
+<hr>
+
+<center><i>Copyright &copy; 1996-2001 <a href="mailto:webmaster@davesite.com">Dave Kristula</a>. All rights reserved.<br>URL: </i>http://www.davesite.com/webstation/html/chap05.shtml</center>
+</center>
+
+</td>
+</table>
+
+</td>
+</table>
+
+</body>
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap05.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:49 GMT -->
+</html>

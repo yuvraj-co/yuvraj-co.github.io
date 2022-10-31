@@ -1,0 +1,193 @@
+<html>
+
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap04.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:47 GMT -->
+<head>
+<title>HTML: MiniChapter 4: Links and Images</title>
+<meta name="description" content="Learn how to add images and links to your web page, and how to turn an image into a link.">
+<meta name="keywords" content="adding images, adding graphics, adding links, editing html, building web sites interactive html tutorial, web page, html, tutorial, creating web sites">
+</head>
+
+<body bgcolor=#FFFFFF text=#000000 background="lilback.jpg">
+
+<p>
+<b><font face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.davesite.com/">davesite.com</a> / <a href="http://www.davesite.com/webstation/">webstation</a> / <a href="index.html">html</a></font></b>
+
+<CENTER><TABLE>
+<TR><TD>
+
+<center>
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+     <script language="JavaScript"> 
+     <!-- /* © 1997-1999 BURST! Media, LLC. All Rights Reserved.*/ 
+     var TheAdcode = 'ad1091c'; 
+     var bN = navigator.appName; 
+     var bV = parseInt(navigator.appVersion); 
+     var base='http://www.burstnet.com/'; 
+     var Tv=''; 
+     var agt=navigator.userAgent.toLowerCase(); 
+     if (bV>=4) 
+       {ts=window.location.pathname+window.location.search; 
+        i=0; Tv=0; while (i< ts.length) 
+           { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+       else   {Tv=escape(window.location.pathname); 
+        if( Tv.charAt(0)!='http://www.davesite.com/' ) Tv="/"+Tv; 
+               else if (Tv.charAt(1)=="http://www.davesite.com/")
+     Tv=""; 
+       if( Tv.charAt(Tv.length-1) == "http://www.davesite.com/") 
+         Tv = Tv + "_";} 
+     if (bN=='Netscape'){ 
+          if ((bV>=4)&&(agt.indexOf("mac")==-1))
+     {  document.write('<s'+'cript src="'+ 
+           base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+           +Tv+'">'); 
+          document.write('</'+'script>');    
+     } 
+          else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+             TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+             document.write('<img src="' + base + 'cgi-bin/ads/' + 
+             TheAdcode + '.cgi' + Tv + '" ismap width=468 height=60' + 
+             ' border=0 alt="Click Here"></a>');} 
+      } 
+     if (bN=='Microsoft Internet Explorer') 
+      document.write('<ifr'+'ame id=BURST src="'+base+'cgi-bin/ads/'
+     + 
+       TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width=468 height=60' + 
+       'marginwidth=0 marginheight=0 hspace=0 vspace=0 ' + 
+       'frameborder=0 scrolling=no></ifr'+'ame>'); 
+     // --> 
+     </script> 
+     <noscript><a href="http://www.burstnet.com/ads/ad1091c-map.cgi" target=_top> 
+     <img src="http://www.burstnet.com/cgi-bin/ads/ad1091c.cgi" 
+      width=468 height=60 border=0 alt="Click Here"></a> 
+     </noscript> 
+     <!-- END BURST CODE --> 
+</center>
+
+</TD></TR>
+</TABLE></CENTER>
+<P>
+
+<hr width=470 noshade>
+
+<table width=100% border=0>
+
+<tr>
+<td width=30 valign=bottom>...</td>
+
+<td>
+
+<!-- start content table -->
+
+<table width=100% border=0 cellpadding=5>
+<tr>
+<td>
+
+
+<center><a href="index.html"><img src="../../graphx/html_now.gif" width=200 height=50 alt="HTML Tutorial" border=0></a><br><font size=+2><b><tt>MiniChapter 4: Links and Images</tt></b></font></center><br>
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Anchored Links...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>Without Links, the World Wide Web wouldn't be a web at all!  To add a link... you will use the <tt>&lt;a href=&quot;<i>location</i>&quot;&gt;</tt> opening tag and <tt>&lt;/a&gt;</tt> closing tag.  Whatever appears between these two tags will become underlined and colored, and if you click on the underlined text it will send the browser to the location within the quotes.<br><br>
+<i>Example of a link...</i><br><br>
+Visit <a href="http://www.davesite.com/">Dave's Site</a>!<br><br>
+<tt>Visit &lt;a href=&quot;http://www.davesite.com/&quot;&gt;Dave's Site&lt;/a&gt;</tt>!<br><br>
+<b>Note: Although Links are usually used to send people to other web pages, you may also use it to send email to a specific address by using a location of mailto:user@host.</b><br><br>
+<i>Example of a Mailto: Link...</i><br><br>
+Send email to <a href="mailto:webmaster@davesite.com">the Author [Dave]</a>!<br><br>
+<tt>Send email to &lt;a href=&quot;mailto:webmaster@davesite.com&quot;&gt;the Author [Dave]&lt;/a&gt;!<br><br></tt>
+
+	<tr><td bgcolor=#FFFFFF><p>	
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>In-line Images...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>You may also add images (pictures) to your web page, as long as the image is in the .gif or .jpg (or .jpeg) file formats.  You will not be able to use .bmp format files!  The basic tag for in-line images in <tt>&lt;img src=&quot;<i>location</i>&quot;&gt;</tt>. It is also recommended to add <tt>HEIGHT</tt> and <tt>WIDTH</tt> attributes to the <tt>IMG</tt> tag, which will allow the image to take proper proportions on a browser that is not currently viewing images.  It is also recommended to use the <tt>ALT=&quot;what picture is&quot;</tt> to tell a person what a picture is in case it is still loading or they are not viewing images. (The <tt>IMG</tt> tag has no closing tag!)<br><br>
+<i>Example of a basic in-line image...</i><br><br>
+<img src="../../graphx/davesmll.gif" WIDTH=200 HEIGHT=50 ALT="Dave's Site"><br><br>
+<tt>&lt;img src=&quot;http://www.davesite.com/graphx/davesmll.gif&quot; WIDTH=200 HEIGHT=50 ALT=&quot;Dave's Site&quot;&gt;</tt>
+
+	<tr><td bgcolor=#FFFFFF><p>	
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Combining Links and Images...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>Many times you may want to have an image that is linked, so that if someone clicks the image, the person will be taken to another page.  This is rather simple- you just need to place the <tt>IMG</tt> tag within the <tt>A HREF</tt> tags. <i>(<tt>&lt;a href=&quot;location_of_link&quot;&gt;&lt;img src=&quot;location_of_image&quot;&gt;&lt;/a&gt;</tt>)</i> You may also use the ALIGN tags with images!<br><br>
+<i>Example of a linked image...</i><br><br>
+<a href="http://www.davesite.com/"><img src="../../graphx/davesmll.gif" align=right></a><br><br>
+<tt>&lt;a href=&quot;http://www.davesite.com/&quot;&gt;&lt;img src=&quot;http://www.davesite.com/graphx/davesmll.gif&quot; align=right&gt;&lt;/a&gt;<br><br></tt>
+
+	<tr><td bgcolor=#FFFFFF><p>
+
+        <tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Try it Yourself!</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>In the Box below, type the following HTML code, then click &quot;Check it Out!&quot;  The HTML document you made will be displayed in your browser.  You may wish to change the words within the tags and the tag attributes just to try it out.<br><br>
+Try typing this:<br><br>
+<tt>&lt;html&gt;<br>
+&lt;head&gt;&lt;title&gt;Title goes here&lt;/title&gt;&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1 align=right&gt;Body goes here&lt;/h1&gt;<br>
+&lt;hr&gt;<br>
+&lt;h3 align=center&gt;Headings are kewl!&lt;/h3&gt;<br>
+&lt;p&gt;&lt;b&gt;I can use text links... Visit &lt;a href=&quot;http://www.davesite.com/&quot;&gt;Dave's Site&lt;/a&gt;!&lt;/b&gt;&lt;hr width=50&gt;<br>
+and Image Links... &lt;a href=&quot;http://www.davesite.com/&quot;&gt;&lt;img src=&quot;http://www.davesite.com/graphx/davesmll.gif&quot;&gt;&lt;/a&gt;&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br><br></tt>
+<FORM METHOD="POST" ACTION="http://www.davesite.com/cgi-bin/yourwork.cgi">
+<TEXTAREA NAME="data" COLS=50 ROWS=10></TEXTAREA>
+<INPUT TYPE="submit" name="submit" value="Check it out!">
+</FORM>
+
+       <tr><td bgcolor=#FFFFFF><p>
+
+<center>
+<!-- VC active -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ValueParameters
+ValueHost = "hs0012243";
+ValueLoaded = false;
+ValueID = "valueid";
+ValueVersion = "1.1";
+ValueWidth = 468;
+ValueHeight = 60;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="http://oz.valueclick.com/jsmaster"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (ValueLoaded) ValueShowAd();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://kansas.valueclick.com/redirect?host=hs0012243&size=468x60&b=html01&v=0" TARGET="_top"><IMG BORDER="0" WIDTH="468" HEIGHT="60" ALT="Click here to visit our sponsor"
+SRC="http://kansas.valueclick.com/cycle?host=hs0012243&size=468x60&b=html01&noscript=1"></A>
+</NOSCRIPT>
+<!-- vc active -->    
+</center>
+
+       <tr><td bgcolor=#DFE2ED>
+
+<center><font size=+1><b><tt>[<a href="chap03.html">Go to MiniChapter 3!</a> | <a href="index-2.html">Index</a> | <a href="chap05.html">Go to MiniChapter 5!</a>]</tt></b></font></center>
+<hr>
+
+<center><i>Copyright &copy; 1996-2001 <a href="mailto:webmaster@davesite.com">Dave Kristula</a>. All rights reserved.<br>URL: </i>http://www.davesite.com/webstation/html/chap04.shtml</center>
+</center>
+
+
+</td>
+</table>
+
+</td>
+</table>
+
+</body>
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap04.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:48 GMT -->
+</html>

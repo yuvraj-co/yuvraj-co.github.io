@@ -1,0 +1,191 @@
+<html>
+
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap15.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:55:02 GMT -->
+<head>
+<title>HTML: MiniChapter 15: Using Meta Tags...</title>
+<meta name="description" content="Learn how to improves your search engines results with meta tags, and how to redirect one page to another page automatically.">
+<meta name="keywords" content="improve search engine results, redirect, autorefresh, meta tags, interactive html tutorial, web page, html, tutorial, creating web sites">
+</head>
+
+<body bgcolor=#FFFFFF text=#000000 background="lilback.jpg">
+<p>
+<b><font face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.davesite.com/">davesite.com</a> / <a href="http://www.davesite.com/webstation/">webstation</a> / <a href="index.html">html</a></font></b>
+
+<CENTER><TABLE>
+<TR><TD>
+
+<center>
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+     <script language="JavaScript"> 
+     <!-- /* © 1997-1999 BURST! Media, LLC. All Rights Reserved.*/ 
+     var TheAdcode = 'ad1091c'; 
+     var bN = navigator.appName; 
+     var bV = parseInt(navigator.appVersion); 
+     var base='http://www.burstnet.com/'; 
+     var Tv=''; 
+     var agt=navigator.userAgent.toLowerCase(); 
+     if (bV>=4) 
+       {ts=window.location.pathname+window.location.search; 
+        i=0; Tv=0; while (i< ts.length) 
+           { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+       else   {Tv=escape(window.location.pathname); 
+        if( Tv.charAt(0)!='http://www.davesite.com/' ) Tv="/"+Tv; 
+               else if (Tv.charAt(1)=="http://www.davesite.com/")
+     Tv=""; 
+       if( Tv.charAt(Tv.length-1) == "http://www.davesite.com/") 
+         Tv = Tv + "_";} 
+     if (bN=='Netscape'){ 
+          if ((bV>=4)&&(agt.indexOf("mac")==-1))
+     {  document.write('<s'+'cript src="'+ 
+           base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+           +Tv+'">'); 
+          document.write('</'+'script>');    
+     } 
+          else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+             TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+             document.write('<img src="' + base + 'cgi-bin/ads/' + 
+             TheAdcode + '.cgi' + Tv + '" ismap width=468 height=60' + 
+             ' border=0 alt="Click Here"></a>');} 
+      } 
+     if (bN=='Microsoft Internet Explorer') 
+      document.write('<ifr'+'ame id=BURST src="'+base+'cgi-bin/ads/'
+     + 
+       TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width=468 height=60' + 
+       'marginwidth=0 marginheight=0 hspace=0 vspace=0 ' + 
+       'frameborder=0 scrolling=no></ifr'+'ame>'); 
+     // --> 
+     </script> 
+     <noscript><a href="http://www.burstnet.com/ads/ad1091c-map.cgi" target=_top> 
+     <img src="http://www.burstnet.com/cgi-bin/ads/ad1091c.cgi" 
+      width=468 height=60 border=0 alt="Click Here"></a> 
+     </noscript> 
+     <!-- END BURST CODE --> 
+</center>
+
+</TD></TR>
+</TABLE></CENTER>
+<P>
+
+<hr width=470 noshade>
+
+<table width=100% border=0>
+
+<tr>
+<td width=30 valign=bottom>...</td>
+
+<td>
+
+<!-- start content table -->
+
+<table width=100% border=0 cellpadding=5>
+<tr>
+<td>
+
+<center><a href="index.html"><img src="../../graphx/html_now.gif" width=200 height=50 alt="HTML Tutorial" border="0"></a><br><font size=+2><b><tt>MiniChapter 15: Using Meta Tags</tt></b></font></center><br>
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Improving Search Engine Results...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>When a search engine finds your page, it will need to index it (that is, add it to its searchable database) with some information off the page.  Many search engines now support the <b><tt>&lt;META&gt;</tt></b> tags, which allow you to give keywords and a description to your page.  This gives you more control over how your page will show up during a search, and will often cause more traffic to your page.<br><br>
+The <b><tt>&lt;META&gt;</tt></b> tag can be used for a few different purposes.  Usually, you should place the <tt>&lt;META&gt;</tt> tag within the <tt>&lt;head&gt;</tt> tags at the beginning of your document.  To improve search engine results, we will use two specific attributes within the meta tag.  Here is an example:<br><br>
+<tt>&lt;meta name=&quot;description&quot; content=&quot;<b>description of page goes here</b>&quot;&gt;</tt><br>
+<tt>&lt;meta name=&quot;keywords&quot; content=&quot;<b>keywords go here</b>&quot;&gt;</tt><br><br>
+When a user searches a search engine that supports meta tags and they query a phrase (search for a keyword) related to your page, your page may show up in the list of results.  Your page will be listed by its Title, and then underneath its title will be the first hundred or so characters of the description you placed in the meta tag.  It is recommended that you keep the description content to no more than 200 characters.  Although the keywords content is not seen by the user when searched, it is recommended to keep this less than 1000 characters, because if you have more the search engine will either ignore the rest or delete you from the index. (Commas are not needed to separate keywords)<br><br>
+<i>Example of a real-life meta situation...</i><br><br>
+<tt>&lt;html&gt;<br><br>
+&lt;head&gt;<br>
+&lt;title&gt;Little Joe's Sound Page&lt;/title&gt;<br>
+&lt;meta name=&quot;description&quot; content=&quot;Joe's Collection of Cool Sound files for you to use in your home page!&quot;&gt;<br>
+&lt;meta name=&quot;keywords&quot; content=&quot;music sounds midi wav joe collection&quot;&gt;<br>
+&lt;/head&gt;<br><br>
+&lt;body&gt;<br>
+Page Goes Here<br>
+&lt;/body&gt;<br><br>
+&lt;/html&gt;<br>
+</tt><br><br>
+Meta tags are not visible in the web page unless the user selects to 'view source'.<br><br>
+
+	<tr><td bgcolor=#FFFFFF><p>
+
+        <tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Auto-refreshing...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>Automatic Refreshing is supported by many newer versions of Netscape Navigator and Microsoft Internet Explorer.  This also uses a modified form of the <tt><b>&lt;META&gt;</b></tt> tag.  Auto refreshing means that once one page loads, you can set a certain number of seconds and then the browser will load another page automatically.  The basic structure is as follows:<br><br>
+<tt>&lt;meta http-equiv=REFRESH CONTENT=&quot;x_seconds; url=http://www.yourhost.com/pagetosendto.html&quot;&gt;</tt><br><br>
+The <tt><b>URL</b></tt> is the page you want it to refresh to, <tt><b>CONTENT</b></tt> is the number of seconds you want it to wait before refreshing, and <b><tt>http-equiv=REFRESH</tt></b> just tells it that this is the refresh meta tag.  For example, if you wanted the page to refresh to davesite.com after 5 seconds it would be as follows:<br><br>
+<tt>&lt;meta http-equiv=REFRESH CONTENT=&quot;5; URL=http://www.davesite.com/&quot;&gt;</tt>
+
+
+	<tr><td bgcolor=#FFFFFF><p>
+
+        <tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Try it Yourself!</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>In the Box below, type the following HTML code, then click &quot;Check it Out!&quot;  The HTML document you made will be displayed in your browser.  You may wish to change the words within the tags just to try it out.<br><br>
+Try typing this:<br><br>
+<tt>&lt;html&gt;<br>
+&lt;head&gt;&lt;title&gt;Pratice Meta Tags&lt;/title&gt;<br>
+&lt;meta name=&quot;description&quot; content=&quot;Joe's Collection of Cool Sound files for you to use in your home page!&quot;&gt;<br>
+&lt;meta name=&quot;keywords&quot; content=&quot;music sounds midi wav joe collection&quot;&gt;<br>
+&lt;meta http-equiv=REFRESH CONTENT=&quot;5; URL=http://www.davesite.com/webstation/html/chap15.shtml&quot;&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+This page Copyright &amp;copy; 1997 Little Joe's Pages &amp;amp; davesite.com.<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></tt>
+<FORM METHOD="POST" ACTION="http://www.davesite.com/cgi-bin/yourwork.cgi">
+<TEXTAREA NAME="data" COLS=50 ROWS=10></TEXTAREA>
+<INPUT TYPE="submit" name="submit" value="Check it out!">
+</FORM>
+
+       <tr><td bgcolor=#FFFFFF><p>
+
+<center>
+<!-- VC active -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ValueParameters
+ValueHost = "hs0012243";
+ValueLoaded = false;
+ValueID = "valueid";
+ValueVersion = "1.1";
+ValueWidth = 468;
+ValueHeight = 60;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="http://oz.valueclick.com/jsmaster"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (ValueLoaded) ValueShowAd();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://kansas.valueclick.com/redirect?host=hs0012243&size=468x60&b=html01&v=0" TARGET="_top"><IMG BORDER="0" WIDTH="468" HEIGHT="60" ALT="Click here to visit our sponsor"
+SRC="http://kansas.valueclick.com/cycle?host=hs0012243&size=468x60&b=html01&noscript=1"></A>
+</NOSCRIPT>
+<!-- vc active -->    
+</center>
+
+       <tr><td bgcolor=#DFE2ED>
+
+<center><font size=+1><b><tt>[<a href="chap14.html">Go to MiniChapter 14!</a> | <a href="index-2.html">Index</a> | <a href="chap16.html">Go to MiniChapter 16!</a>]</tt></b></font></center>
+
+<hr>
+
+<center><i>Copyright &copy; 1996-2001 <a href="mailto:webmaster@davesite.com">Dave Kristula</a>. All rights reserved.<br>URL: </i>http://www.davesite.com/webstation/html/chap15.shtml</center>
+</center>
+
+</td>
+</table>
+
+</td>
+</table>
+
+</body>
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap15.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:55:03 GMT -->
+</html>

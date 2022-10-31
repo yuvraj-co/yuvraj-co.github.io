@@ -1,0 +1,191 @@
+<html>
+
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap06.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:49 GMT -->
+<head>
+<title>HTML: MiniChapter 6: Clean Code, Comments, and Escape Codes</title>
+<meta name="description" content="Learn how to add symbols like the copyright symbol into web pages, and how to add comments to your code.">
+<meta name="keywords" content="adding copyright symbol, adding comments, editing html, building web sites, interactive html tutorial, web page, html, tutorial, creating web sites">
+
+</head>
+
+<body bgcolor=#FFFFFF text=#000000 background="lilback.jpg">
+
+<p>
+<b><font face="Verdana">&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.davesite.com/">davesite.com</a> / <a href="http://www.davesite.com/webstation/">webstation</a> / <a href="index.html">html</a></font></b>
+
+<CENTER><TABLE>
+<TR><TD>
+
+<center>
+<!-- BEGIN RICH-MEDIA BURST! CODE --> 
+     <script language="JavaScript"> 
+     <!-- /* © 1997-1999 BURST! Media, LLC. All Rights Reserved.*/ 
+     var TheAdcode = 'ad1091c'; 
+     var bN = navigator.appName; 
+     var bV = parseInt(navigator.appVersion); 
+     var base='http://www.burstnet.com/'; 
+     var Tv=''; 
+     var agt=navigator.userAgent.toLowerCase(); 
+     if (bV>=4) 
+       {ts=window.location.pathname+window.location.search; 
+        i=0; Tv=0; while (i< ts.length) 
+           { Tv=Tv+ts.charCodeAt(i); i=i+1; } Tv="/"+Tv;} 
+       else   {Tv=escape(window.location.pathname); 
+        if( Tv.charAt(0)!='http://www.davesite.com/' ) Tv="/"+Tv; 
+               else if (Tv.charAt(1)=="http://www.davesite.com/")
+     Tv=""; 
+       if( Tv.charAt(Tv.length-1) == "http://www.davesite.com/") 
+         Tv = Tv + "_";} 
+     if (bN=='Netscape'){ 
+          if ((bV>=4)&&(agt.indexOf("mac")==-1))
+     {  document.write('<s'+'cript src="'+ 
+           base+'cgi-bin/ads/'+TheAdcode+'.cgi/RETURN-CODE/JS' 
+           +Tv+'">'); 
+          document.write('</'+'script>');    
+     } 
+          else if (bV>=3) {document.write('<'+'a href="'+base+'ads/'+ 
+             TheAdcode+'-map.cgi'+Tv+'"target=_top>'); 
+             document.write('<img src="' + base + 'cgi-bin/ads/' + 
+             TheAdcode + '.cgi' + Tv + '" ismap width=468 height=60' + 
+             ' border=0 alt="Click Here"></a>');} 
+      } 
+     if (bN=='Microsoft Internet Explorer') 
+      document.write('<ifr'+'ame id=BURST src="'+base+'cgi-bin/ads/'
+     + 
+       TheAdcode + '.cgi' + Tv + '/RETURN-CODE" width=468 height=60' + 
+       'marginwidth=0 marginheight=0 hspace=0 vspace=0 ' + 
+       'frameborder=0 scrolling=no></ifr'+'ame>'); 
+     // --> 
+     </script> 
+     <noscript><a href="http://www.burstnet.com/ads/ad1091c-map.cgi" target=_top> 
+     <img src="http://www.burstnet.com/cgi-bin/ads/ad1091c.cgi" 
+      width=468 height=60 border=0 alt="Click Here"></a> 
+     </noscript> 
+     <!-- END BURST CODE --> 
+</center>
+
+</TD></TR>
+</TABLE></CENTER>
+<P>
+
+<hr width=470 noshade>
+
+<table width=100% border=0>
+
+<tr>
+<td width=30 valign=bottom>...</td>
+
+<td>
+
+<!-- start content table -->
+
+<table width=100% border=0 cellpadding=5>
+<tr>
+<td>
+
+<center><a href="index.html"><img src="../../graphx/html_now.gif" width=200 height=50 alt="HTML Tutorial" border=0></a><br><font size=+2><b><tt>MiniChapter 6: Clean Code, Comments, and Escape Codes</tt></b></font></center><br>
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Clean Code...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>Clean code means that your HTML coding follows all specifications, I personally don't use true clean code, but very close to it.  Here are a few ways to keep your code clean:<br>
+
+<ul>
+ <li><b>Don't type special characters into your code, instead type their escape code...</b> many characters should NEVER be typed directly into HTML code... for example the &quot;&lt;&quot;, &quot;&gt;&quot;, the &quot;&copy;&quot;, &quot;&amp;&quot;, and the &quot; itself.  Instead, type <tt>&amp;<b>escape_code</b>;</tt> (Ampersand, Escape Code for Character, then a semicolon).  For these 5 characters, here are the escape codes...
+ <ul>
+ <li>For the <tt>&lt;</tt> type <tt>&amp;lt;</tt>
+ <li>For the <tt>&gt;</tt> type <tt>&amp;gt;</tt>
+ <li>For the <tt>&copy;</tt> type <tt>&amp;copy;</tt>
+ <li>For the <tt>&amp;</tt> type <tt>&amp;amp;</tt>
+ <li>For the <tt>&quot;</tt> type <tt>&amp;quot;</tt>
+ </ul> 
+</li><br>
+
+ <li><b>Use quotes around values in attributes...</b> For example, if you want a horizontal rule that is half of the screen width, type <tt>&lt;hr width=&quot;50%&quot;&gt;</tt> rather than <tt>&lt;hr width=50%&gt;</tt>, or if you want one that is size 5 type <tt>&lt;hr size=&quot;5&quot;&gt;</tt> rather than <tt>&lt;hr size=5&gt;</tt>.  Isn't it ironic that I don't? &lt;g&gt;<br><br></li>
+ <li><b>Don't overlap tags...</b> Overlapping occurs when <b>Tag A</b> starts, <b>Tag B</b> starts, <b>Tag A</b> closes, then <b>Tag B</b> closes.  This will cause errors in sensitive browsers.  For Example, it will not render correctly in Navigator 4.0 Beta1, Netscape purposefully built into the browser so developers could catch errors.</li> Examples:<br>
+<ul>
+<li><b>Wrong Way (Overlaps):</b><br><tt>&lt;font size=+1&gt;&lt;b&gt;This is Bold and One Font Size Bigger&lt;/font&gt;&lt;/b&gt;</tt><br>
+<b>Right Way (Doesn't Overlap):</b><br><tt>&lt;font size=+1&gt;&lt;b&gt;This is Bold and One Font Size Bigger&lt;/b&gt;&lt;/font&gt;</tt><br>
+<li><b>Wrong Way (Overlaps):</b><br><tt>&lt;a href=&quot;here.html&quot;&gt;&lt;i&gt;This link is italicized&lt;/a&gt;&lt;/i&gt;</tt><br>
+<b>Right Way (Doesn't Overlap):</b><br><tt>&lt;a href=&quot;here.html&quot;&gt;&lt;i&gt;This link is italicized&lt;/i&gt;&lt;/a&gt;</tt><br>
+</ul>
+</li>
+</ul>
+
+
+	<tr><td bgcolor=#FFFFFF><p>	
+
+	<tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>The Comment Tag...</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>If you are writing an HTML document, sometimes you may want to put little reminders to yourself with your code so that you will be able to interpret your coding better.  A comment will not appear in a web browser when the page is displayed... it is only visible when the source code is viewed.  You start commented text with <tt>&lt;!--</tt> and end it with <tt>--&gt;</tt>.
+
+	<tr><td bgcolor=#FFFFFF><p>
+
+        <tr><td bgcolor=#DFE2ED>
+	<tt><b><font size=+2>Try it Yourself!</font></b></tt>
+
+	<tr><td bgcolor=#EEEEEE>
+	<p>In the Box below, type the following HTML code, then click &quot;Check it Out!&quot;  The HTML document you made will be displayed in your browser.  You may wish to change the words within the tags just to try it out.<br><br>
+Try typing this:<br><br>
+<tt>&lt;html&gt;<br>
+&lt;head&gt;&lt;title&gt;TITLE HERE&lt;/title&gt;&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;!-- No One Will see this really long comment I have typed right here unless they decide to view the source. --&gt;<br>
+This page Copyright &amp;copy; 1998 Little Joe's Pages &amp;amp; davesite.com.<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;<br></tt>
+<FORM METHOD="POST" ACTION="http://www.davesite.com/cgi-bin/yourwork.cgi">
+<TEXTAREA NAME="data" COLS=50 ROWS=10></TEXTAREA>
+<INPUT TYPE="submit" name="submit" value="Check it out!">
+</FORM>
+
+       <tr><td bgcolor=#FFFFFF><p>
+
+<center>
+<!-- VC active -->
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+// ValueParameters
+ValueHost = "hs0012243";
+ValueLoaded = false;
+ValueID = "valueid";
+ValueVersion = "1.1";
+ValueWidth = 468;
+ValueHeight = 60;
+//-->
+</SCRIPT>
+<SCRIPT LANGUAGE="Javascript" SRC="http://oz.valueclick.com/jsmaster"></SCRIPT>
+<SCRIPT LANGUAGE="JavaScript">
+<!--
+if (ValueLoaded) ValueShowAd();
+//-->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF="http://kansas.valueclick.com/redirect?host=hs0012243&size=468x60&b=html01&v=0" TARGET="_top"><IMG BORDER="0" WIDTH="468" HEIGHT="60" ALT="Click here to visit our sponsor"
+SRC="http://kansas.valueclick.com/cycle?host=hs0012243&size=468x60&b=html01&noscript=1"></A>
+</NOSCRIPT>
+<!-- vc active -->    
+</center>
+
+       <tr><td bgcolor=#DFE2ED>
+
+<center><font size=+1><b><tt>[<a href="chap05.html">Go To MiniChapter 5!</a> | <a href="index-2.html">Index</a> | <a href="chap07.html">Go to MiniChapter 7!</a>]</tt></b></font></center>
+<hr>
+
+<center><i>Copyright &copy; 1996-2001 <a href="mailto:webmaster@davesite.com">Dave Kristula</a>. All rights reserved.<br>URL: </i>http://www.davesite.com/webstation/html/chap06.shtml</center>
+</center>
+
+</td>
+</table>
+
+</td>
+</table>
+
+</body>
+
+<!-- Mirrored from www.davesite.com/webstation/html/chap06.shtml by HTTrack Website Copier/3.x [XR&CO'2001], Mon, 24 Dec 2001 04:54:50 GMT -->
+</html>
